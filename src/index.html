@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Angular 15 Template</title>
+    <title>ShowTrackr</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <link rel="icon" type="image/x-icon" href="favicon.ico" /> -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script>
       tailwind.config = {
@@ -16,16 +18,32 @@
               clifford: '#da373d',
               primary: '#540CFA',
               gray: {
+                300: '#E5E9F2',
                 500: '#8492A6',
                 950: '#273444',
               },
+            },
+            fontSize: {
+              sm: ['12px', '1.5'],
+              base: ['16px', '1.5'],
+              lg: ['18px', '1.5'],
+              xl: ['20px', '1.5'],
+              '2xl': ['30px', '1.2'],
+              '3xl': ['60px', '1.2'],
+            },
+            spacing: {
+              '6px': '6px',
+              '15px': '15px',
+              '50px': '50px',
+              '60px': '60px',
+              '570px': '570px',
             },
           },
         },
       };
     </script>
   </head>
-  <body style="background-color: purple">
+  <body>
     <app-root></app-root>
   </body>
 </html>
