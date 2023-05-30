@@ -10,10 +10,31 @@
   </div>
 </div> -->
 
-<section>
-  <header class="w-screen bg-black py-2.5 px-5 lg:px-4">
-    <nav class="h-4 bg-white">
-      <ul></ul>
+<section class="relative">
+  <header class="absolute backdrop-blur-sm bg-white flex font-semibold justify-center opacity-95 w-full">
+    <!-- check opacity -->
+    <nav class="max-w-screen-lg px-5 lg:px-4 py-2.5 w-full">
+      <ul class="flex gap-20 items-center justify-between w-full">
+        <li>
+          <a href="#">
+            <img
+              class="w-auto"
+              src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/e79ed90af8258bbff7f5c9babdbe2747931c648a/assets/logo.svg"
+            />
+          </a>
+        </li>
+        <ul class="flex gap-8 items-center justify-between w-auto">
+          <li class="md:flex hidden px-4 py-2">
+            <a href="#">Features</a>
+          </li>
+          <li class="md:flex hidden px-4 py-2">
+            <a href="#">About Us</a>
+          </li>
+          <li class="bg-primary rounded">
+            <a class="leading-10 px-4 py-2 text-white" href="#">Log In</a>
+          </li>
+        </ul>
+      </ul>
     </nav>
   </header>
   <div></div>
