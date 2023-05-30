@@ -1,0 +1,16 @@
+// base --------------------
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:where(body) {
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
