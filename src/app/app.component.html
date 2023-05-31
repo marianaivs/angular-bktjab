@@ -11,8 +11,8 @@
 </div> -->
 
 <div>
-  <header class="absolute backdrop-blur-[5px] bg-white flex font-semibold inset-x-0 justify-center opacity-95 top-0 w-full z-50">
-    <nav class="max-w-screen-lg px-5 py-2.5 w-full lg:px-4">
+  <header class="absolute backdrop-blur-[5px] bg-white flex font-semibold inset-x-0 justify-center mx-auto bg-opacity-90 top-0 w-full z-50">
+    <nav class="max-w-boxed-md px-5 py-2.5 w-full lg:px-4">
       <ul class="flex gap-20 items-center justify-between w-full">
         <li>
           <a href="#">
@@ -38,54 +38,129 @@
   </header>
 </div>
 
-<section class="mt-60px px-5 relative overflow-hidden">
-  <div class="flex flex-col gap-20 py-60px lg:flex-row md:justify-between">
-    <div class="flex flex-col gap-50px">
-      <div class="flex flex-col gap-10 md:max-w-[570px]">
-        <h1 class="font-bold text-2xl text-gray-950 md:text-3xl">Track your shows automatically</h1>
-        <p class="opacity-80 text-base text-gray-500 d:text-xl">
-          With ShowTrackr you can track your favorite TV shows automatically, so you never loose track of your TV shows ever again. 🍿
-        </p>
-        <!-- replace emoji -->
-        <div>
-          <form class="relative">
-            <label for="email-address" class="absolute font-semibold pl-15px pt-1 text-primary text-sm">Email</label>
-            <input
-              id="email-address"
-              name="email"
-              type="email"
-              class="border-2 border-gray-300 pb-1 pl-15px pr-3.5 pt-5 rounded-md w-full"
-              placeholder="your@email.com"
-            />
-            <button class="absolute bg-primary font-semibold leading-10 mr-1 my-6px px-4 right-0 rounded text-white top-0 truncate">
-              Start Tracking
-            </button>
-          </form>
+<main>
+  <div class="relative">
+    <section class="max-w-boxed-md mx-auto mt-60px px-5">
+      <div class="flex flex-col gap-20 py-60px md:justify-between md:flex-row">
+        <div class="flex flex-col md:justify-center gap-50px">
+          <div class="flex flex-col gap-10 md:max-w-[570px]">
+            <h1 class="font-bold text-2xl text-gray-950 lg:text-3xl">Track your shows automatically</h1>
+            <p class="opacity-80 text-base text-gray-500 lg:text-xl">
+              With ShowTrackr you can track your favorite TV shows automatically, so you never loose track of your TV shows ever again. 🍿
+            </p>
+            <!-- replace emoji -->
+            <div>
+              <form class="relative">
+                <label for="email-address" class="absolute font-semibold ps-15px pointer-events-none pt-1 text-primary text-sm"
+                  >Email</label
+                >
+                <input
+                  id="email-address"
+                  name="email"
+                  type="email"
+                  class="border-2 border-gray-300 pb-1 ps-15px pe-3.5 pt-5 rounded-md w-full"
+                  placeholder="your@email.com"
+                />
+                <button class="absolute bg-primary font-semibold leading-10 me-1 my-6px px-4 end-0 rounded text-white top-0 truncate">
+                  Start Tracking
+                </button>
+              </form>
+            </div>
+          </div>
+          <div>
+            <span class="text-gray-500 text-sm">Compatible with</span>
+            <div class="flex gap-4 items-center justify-start mt-4">
+              <img
+                src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/8c786e82ecd2fa7c41996407deeae945da851950/assets/icon-apple.svg"
+                alt="Apple devices"
+              />
+              <img
+                src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/8c786e82ecd2fa7c41996407deeae945da851950/assets/icon-android.svg"
+                alt="Android devices"
+              />
+              <img
+                src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/8c786e82ecd2fa7c41996407deeae945da851950/assets/icon-windows.svg"
+                alt="Windows devices"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center relative shrink-0 z-10">
+          <img
+            src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/iphone-14-pro-frame.png"
+            class="absolute h-fit top-0 w-[300px] z-50"
+          />
+          <img src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/app-mockup.png" class="h-fit w-[280px]" />
         </div>
       </div>
-      <div>
-        <span class="text-gray-500 text-sm">Compatible with</span>
-        <div class="flex gap-4 items-center justify-start mt-4">
-          <img
-            src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/8c786e82ecd2fa7c41996407deeae945da851950/assets/icon-apple.svg"
-          />
-          <img
-            src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/8c786e82ecd2fa7c41996407deeae945da851950/assets/icon-android.svg"
-          />
-          <img
-            src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/8c786e82ecd2fa7c41996407deeae945da851950/assets/icon-windows.svg"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="flex justify-center relative z-10">
       <img
-        src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/iphone-14-pro-frame.png"
-        class="absolute h-fit top-0 w-[300px] z-50"
+        src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/shape-squares.png"
+        class="absolute bottom-0 inset-y-1/2 w-[280px] -right-1/2 md:-right-1/2 md:-top-2/3 md:w-3/4 -z-10"
       />
-      <img src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/app-mockup.png" class="h-fit w-[280px]" />
-    </div>
+      <img
+        src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/shape-square.png"
+        class="absolute bottom-0 -left-1/4 w-[148px] md:-left-[17%] md:w-1/4 md:-bottom-1/5 -z-10"
+      />
+    </section>
   </div>
-  <img src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/shape-squares.png" class="absolute bottom-0 start-2/4 inset-y-1/2"/>
-  <img src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/shape-square.png" class="absolute bottom-0 end-2/4"/>
-</section>
+
+  <section class="max-w-boxed-md mx-auto mt-60px px-5">
+    <div class="flex flex-column flex-wrap gap-50px text-center md:flex-row">
+      <div>
+        <span class="text-gray-500 text-lg">Features</span>
+        <!-- ^ should I use another tag instead of span? -->
+        <h2 class="font-bold mb-5 mt-5px text-2xl text-gray-950 lg:text-3xl">Built and customized for your habits</h2>
+        <p class="text-gray-500">
+          ShowTrackr’s built-in machine learning and context-aware features guarantee that all the notifications and recommendations are
+          always delivered to you in the perfect moment.
+        </p>
+      </div>
+      <div class="flex flex-column flex-wrap gap-[100px] md:flex-row md:flex-nowrap">
+        <div class="align-center flex flex-column flex-wrap gap-11px justify-center md:basis-1/3 md:shrink-0">
+          <div class="flex justify-center w-full">
+            <img
+              src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/stash-2023-30-05_19-03-01/assets/feature.png"
+              class="w-50px"
+            />
+          </div>
+          <h3 class="font-bold text-xl">Automated tracking</h3>
+          <p class="text-gray-500">Track your favorite shows automatically without switching between apps.</p>
+          <a href="#" class="leading-10 px-4 py-2 text-primary">Learn more</a>
+        </div>
+        <div class="align-center flex flex-column flex-wrap gap-11px justify-center md:basis-1/3 md:shrink-0">
+          <div class="flex justify-center w-full">
+            <img
+              src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/stash-2023-30-05_19-03-01/assets/feature-1.png"
+              class="w-50px"
+            />
+          </div>
+          <h3 class="font-bold text-xl">Machine learning</h3>
+          <p class="text-gray-500">Get recommendations like never before, which are truly customized for your taste.</p>
+          <a href="#" class="leading-10 px-4 py-2 text-primary">Learn more</a>
+        </div>
+        <div class="align-center flex flex-column flex-wrap gap-11px justify-center md:basis-1/3 md:shrink-0">
+          <div class="flex justify-center w-full">
+            <img
+              src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/stash-2023-30-05_19-03-01/assets/feature-2.png"
+              class="w-50px"
+            />
+          </div>
+          <h3 class="font-bold text-xl">Smart notifications</h3>
+          <p class="text-gray-500">Receive smart notifications exactly at the right moments when you need them.</p>
+          <a href="#" class="leading-10 px-4 py-2 text-primary">Learn more</a>
+        </div>
+        <div class="align-center flex flex-column flex-wrap gap-11px justify-center md:basis-1/3 md:shrink-0">
+          <div class="flex justify-center w-full">
+            <img
+              src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/stash-2023-30-05_19-03-01/assets/feature-2.png"
+              class="w-50px"
+            />
+          </div>
+          <h3 class="font-bold text-xl">Smart notifications</h3>
+          <p class="text-gray-500">Receive smart notifications exactly at the right moments when you need them.</p>
+          <a href="#" class="leading-10 px-4 py-2 text-primary">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
