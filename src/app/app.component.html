@@ -1,75 +1,62 @@
-<!-- <div class="w-screen h-screen flex flex-col gap-2 items-center justify-center">
-  <div class="flex gap-4 text-3xl font-bold">
-    <span class="text-red-500">Angular</span>
-    <span class="text-slate-600">+</span>
-    <span class="text-sky-400">TailwindCSS</span>
-  </div>
-
-  <div class="flex gap-4 text-xl font-bold">
-    <span class="text-slate-600">Template</span>
-  </div>
-</div> -->
-
-<div>
-  <header class="absolute backdrop-blur-[5px] bg-white flex font-semibold inset-x-0 justify-center mx-auto bg-opacity-90 top-0 w-full z-50">
-    <nav class="max-w-boxed-md px-5 py-2.5 w-full lg:px-4">
-      <ul class="flex gap-20 items-center justify-between w-full">
-        <li>
-          <a href="#">
-            <img
-              class="w-auto"
-              src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/e79ed90af8258bbff7f5c9babdbe2747931c648a/assets/logo.svg"
-            />
-          </a>
+<!-- header -->
+<header class="absolute backdrop-blur-sm bg-white flex font-semibold inset-x-0 justify-center mx-auto bg-opacity-90 top-0 w-full z-50">
+  <nav class="max-w-boxed-md px-5 py-2.5 w-full lg:px-4">
+    <ul class="flex gap-20 items-center justify-between w-full">
+      <li>
+        <a href="#">
+          <img
+            class="w-auto"
+            src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/e79ed90af8258bbff7f5c9babdbe2747931c648a/assets/logo.svg"
+          />
+        </a>
+      </li>
+      <ul class="flex gap-8 items-center justify-between w-auto">
+        <li class="hidden px-4 py-2 md:flex">
+          <a href="#">Features</a>
         </li>
-        <ul class="flex gap-8 items-center justify-between w-auto">
-          <li class="hidden px-4 py-2 md:flex">
-            <a href="#">Features</a>
-          </li>
-          <li class="hidden px-4 py-2 md:flex">
-            <a href="#">About Us</a>
-          </li>
-          <li class="bg-primary rounded">
-            <a class="leading-10 px-4 py-2 text-white" href="#">Log In</a>
-          </li>
-        </ul>
+        <li class="hidden px-4 py-2 md:flex">
+          <a href="#">About Us</a>
+        </li>
+        <li class="bg-primary rounded">
+          <a class="leading-10 px-4 py-2 text-white" href="#">Log In</a>
+        </li>
       </ul>
-    </nav>
-  </header>
-</div>
+    </ul>
+  </nav>
+</header>
 
-<main>
+<!-- main content -->
+<main class="mt-60px">
+  <!-- hero section -->
   <div class="relative">
-    <section class="max-w-boxed-md mx-auto mt-60px px-5">
+    <section class="max-w-boxed-md mx-auto px-5">
       <div class="flex flex-col gap-20 py-60px md:justify-between md:flex-row">
-        <div class="flex flex-col md:justify-center gap-50px">
+        <div class="flex flex-col md:justify-center gap-12">
+          <!-- main description -->
           <div class="flex flex-col gap-10 md:max-w-[570px]">
-            <h1 class="font-bold text-2xl text-gray-950 lg:text-3xl">Track your shows automatically</h1>
+            <h1 class="font-bold text-2xl text-gray-900 lg:text-3xl">Track your shows automatically</h1>
             <p class="opacity-80 text-base text-gray-500 lg:text-xl">
               With ShowTrackr you can track your favorite TV shows automatically, so you never loose track of your TV shows ever again. 🍿
             </p>
-            <!-- replace emoji -->
-            <div>
-              <form class="relative">
-                <label for="email-address" class="absolute font-semibold ps-15px pointer-events-none pt-1 text-primary text-sm"
-                  >Email</label
-                >
-                <input
-                  id="email-address"
-                  name="email"
-                  type="email"
-                  class="border-2 border-gray-300 pb-1 ps-15px pe-3.5 pt-5 rounded-md w-full"
-                  placeholder="your@email.com"
-                />
-                <button class="absolute bg-primary font-semibold leading-10 me-1 my-6px px-4 end-0 rounded text-white top-0 truncate">
-                  Start Tracking
-                </button>
-              </form>
-            </div>
+            <!-- subscription form -->
+            <form class="relative">
+              <label for="email-address" class="absolute font-semibold ps-4 pointer-events-none pt-1 text-primary text-sm">Email</label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                class="border-2 border-gray-300 pb-1 ps-4 pe-3.5 pt-5 rounded-md w-full"
+                placeholder="your@email.com"
+              />
+              <button class="absolute bg-primary font-semibold leading-10 me-1 my-1.5 px-4 end-0 rounded text-white top-0 truncate">
+                Start Tracking
+              </button>
+            </form>
           </div>
-          <div>
+          <!-- compatibility -->
+          <div class="flex flex-col gap-4">
             <span class="text-gray-500 text-sm">Compatible with</span>
-            <div class="flex gap-4 items-center justify-start mt-4">
+            <div class="flex gap-4 items-center justify-start">
               <img
                 src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/8c786e82ecd2fa7c41996407deeae945da851950/assets/icon-apple.svg"
                 alt="Apple devices"
@@ -93,6 +80,7 @@
           <img src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/app-mockup.png" class="h-fit w-[280px]" />
         </div>
       </div>
+      <!-- decoration assets -->
       <img
         src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/shape-squares.png"
         class="absolute bottom-0 inset-y-1/2 w-[280px] -right-1/2 md:-right-1/2 md:-top-2/3 md:w-3/4 -z-10"
@@ -104,19 +92,24 @@
     </section>
   </div>
 
-  <section class="max-w-boxed-md mx-auto px-5">
-    <div class="flex flex-col flex-wrap gap-50px text-center md:flex-row md:justify-stretch">
-      <div>
-        <span class="text-gray-500 text-lg">Features</span>
-        <!-- ^ should I use another tag instead of span? -->
-        <h2 class="font-bold mb-5 mt-5px text-2xl text-gray-950 lg:text-3xl">Built and customized for your habits</h2>
-        <p class="text-gray-500">
+  <!-- features -->
+  <section class="max-w-boxed-md mx-auto px-5 py-5">
+    <div class="flex flex-col flex-wrap gap-12 text-center md:flex-row md:justify-stretch">
+      <!-- main description -->
+      <div class="flex flex-col gap-5">
+        <div class="flex flex-col gap-1">
+          <span class="text-gray-500 text-lg">Features</span>
+          <h2 class="font-bold text-2xl text-gray-900 lg:text-3xl">Built and customized for your habits</h2>
+        </div>
+        <p class="opacity-80 text-base text-gray-500 md:text-xl">
           ShowTrackr’s built-in machine learning and context-aware features guarantee that all the notifications and recommendations are
           always delivered to you in the perfect moment.
         </p>
       </div>
-      <div class="flex flex-col flex-wrap gap-[100px] md:flex-row">
-        <div class="align-center basis-full flex flex-col flex-wrap gap-11px justify-center md:basis-1/3 md:grow">
+      <!-- feature container -->
+      <div class="flex flex-col gap-24 items-center md:flex-row md:items-start">
+        <!-- feature box -->
+        <div class="align-center flex flex-col flex-wrap gap-3 justify-center md:basis-1/3 md:max-w-[calc(33.3333%-3rem)]">
           <div class="flex justify-center w-full">
             <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d_1_41)">
@@ -153,7 +146,7 @@
           </div>
           <h3 class="font-bold text-xl">Automated tracking</h3>
           <p class="text-gray-500">Track your favorite shows automatically without switching between apps.</p>
-          <a href="#" class="leading-10 px-4 py-2 text-primary flex align-center justify-center"
+          <a href="#" class="font-semibold leading-10 px-4 py-2 text-primary flex align-center justify-center"
             >Learn more
             <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="self-center ms-2">
               <path
@@ -163,7 +156,8 @@
             </svg>
           </a>
         </div>
-        <div class="align-center basis-full flex flex-col flex-wrap gap-11px justify-center md:basis-1/3 md:grow">
+        <!-- feature box -->
+        <div class="align-center flex flex-col flex-wrap gap-3 justify-center md:basis-1/3 md:max-w-[calc(33.3333%-3rem)]">
           <div class="flex justify-center w-full">
             <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d_1_45)">
@@ -202,7 +196,7 @@
           </div>
           <h3 class="font-bold text-xl">Machine learning</h3>
           <p class="text-gray-500">Get recommendations like never before, which are truly customized for your taste.</p>
-          <a href="#" class="leading-10 px-4 py-2 text-primary flex align-center justify-center"
+          <a href="#" class="font-semibold leading-10 px-4 py-2 text-primary flex align-center justify-center"
             >Learn more
             <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="self-center ms-2">
               <path
@@ -212,7 +206,8 @@
             </svg>
           </a>
         </div>
-        <div class="align-center basis-full flex flex-col flex-wrap gap-11px justify-center md:basis-1/3 md:grow">
+        <!-- feature box -->
+        <div class="align-center flex flex-col flex-wrap gap-3 justify-center md:basis-1/3 md:max-w-[calc(33.3333%-3rem)]">
           <div class="flex justify-center w-full">
             <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d_1_43)">
@@ -251,56 +246,7 @@
           </div>
           <h3 class="font-bold text-xl">Smart notifications</h3>
           <p class="text-gray-500">Receive smart notifications exactly at the right moments when you need them.</p>
-          <a href="#" class="leading-10 px-4 py-2 text-primary flex align-center justify-center"
-            >Learn more
-            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="self-center ms-2">
-              <path
-                d="M10.1875 7.79102C10.5938 8.16602 10.5938 8.82227 10.1875 9.19727L4.1875 15.1973C3.8125 15.6035 3.15625 15.6035 2.78125 15.1973C2.375 14.8223 2.375 14.166 2.78125 13.791L8.0625 8.47852L2.78125 3.19727C2.375 2.82227 2.375 2.16602 2.78125 1.79102C3.15625 1.38477 3.8125 1.38477 4.1875 1.79102L10.1875 7.79102Z"
-                fill="#540CFA"
-              />
-            </svg>
-          </a>
-        </div>
-        <div class="align-center basis-full flex flex-col flex-wrap gap-11px justify-center md:basis-1/3 md:grow">
-          <div class="flex justify-center w-full">
-            <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d_1_43)">
-                <rect x="4" y="2" width="50" height="50" rx="10" fill="url(#paint0_linear_1_43)" />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M32.7703 18.3649C32.7703 21.0517 34.9483 23.2297 37.6351 23.2297C40.3219 23.2297 42.5 21.0517 42.5 18.3649C42.5 15.6781 40.3219 13.5 37.6351 13.5C34.9483 13.5 32.7703 15.6781 32.7703 18.3649ZM30.8319 18.0405C30.8528 17.5956 30.9163 17.1618 31.0186 16.7432H22.392C20.2425 16.7432 18.5 18.4861 18.5 20.6352V33.608C18.5 35.7575 20.2429 37.5 22.392 37.5H35.3648C37.5142 37.5 39.2568 35.7571 39.2568 33.608V24.9814C38.8382 25.0837 38.4044 25.1472 37.9595 25.1681V33.608C37.9595 35.0408 36.7976 36.2027 35.3648 36.2027H22.392C20.9592 36.2027 19.7973 35.0409 19.7973 33.608V20.6352C19.7973 19.2025 20.9591 18.0405 22.392 18.0405H30.8319Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_1_43"
-                  x="0"
-                  y="0"
-                  width="58"
-                  height="58"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                  <feOffset dy="2" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.141176 0 0 0 0 0.0313726 0 0 0 0 0.501961 0 0 0 0.15 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_43" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_43" result="shape" />
-                </filter>
-                <linearGradient id="paint0_linear_1_43" x1="-21" y1="27" x2="29" y2="77" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#32FBFC" />
-                  <stop offset="1" stop-color="#3214F2" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <h3 class="font-bold text-xl">Smart notifications</h3>
-          <p class="text-gray-500">Receive smart notifications exactly at the right moments when you need them.</p>
-          <a href="#" class="leading-10 px-4 py-2 text-primary flex align-center justify-center"
+          <a href="#" class="font-semibold leading-10 px-4 py-2 text-primary flex align-center justify-center"
             >Learn more
             <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="self-center ms-2">
               <path
@@ -314,39 +260,40 @@
     </div>
   </section>
 
+  <!-- poster carousel -->
   <section class="bg-gray-100 py-60px">
-    <div class="flex flex-nowrap flex-row justify-center gap-30px">
-      <a href="#" class="flex-none w-220px">
+    <div class="flex flex-nowrap flex-row justify-center gap-8">
+      <a href="#" class="flex-none w-56">
         <img
           src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/poster-black-mirror.jpg"
         />
       </a>
-      <a href="#" class="flex-none w-220px">
+      <a href="#" class="flex-none w-56">
         <img
           src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/poster-stranger-things.jpg"
         />
       </a>
-      <a href="#" class="flex-none w-220px">
+      <a href="#" class="flex-none w-56">
         <img
           src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/poster-westworld.jpg"
         />
       </a>
-      <a href="#" class="flex-none w-220px">
+      <a href="#" class="flex-none w-56">
         <img
           src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/poster-house-of-cards.jpg"
         />
       </a>
-      <a href="#" class="flex-none w-220px">
+      <a href="#" class="flex-none w-56">
         <img
           src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/poster-game-of-thrones.jpg"
         />
       </a>
-      <a href="#" class="flex-none w-220px">
+      <a href="#" class="flex-none w-56">
         <img
           src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/poster-flash.jpg"
         />
       </a>
-      <a href="#" class="flex-none w-220px">
+      <a href="#" class="flex-none w-56">
         <img
           src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/poster-how-to-get-away-with-murder.jpg"
         />
@@ -354,50 +301,119 @@
     </div>
   </section>
 
-  <div class="relative">
-    <section class="max-w-boxed-lg mx-auto px-5">
-      <div class="flex flex-col gap-20 py-60px md:flex-row md:justify-between">
-        <div class="flex flex-col gap-5 md:justify-center">
-          <div class="flex flex-col md:max-w-[570px]">
-            <h2 class="font-bold mb-5 mt-5px text-2xl text-gray-950 lg:text-3xl">Amazing Trailers</h2>
-            <p class="opacity-80 text-base text-gray-500 lg:text-xl">
-              Since most of our features work in a completely automated way, you will mainly use our apps to discover new TV shows
-              recommended for you and discuss the most interesting episodes with like-minded people.
-            </p>
-          </div>
-          <div>
-            <span class="text-gray-500 text-sm">Compatible with</span>
-            <div class="flex gap-4 items-center justify-start mt-4">
-              <img
-                src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/8c786e82ecd2fa7c41996407deeae945da851950/assets/icon-apple.svg"
-                alt="Apple devices"
-              />
-              <img
-                src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/8c786e82ecd2fa7c41996407deeae945da851950/assets/icon-android.svg"
-                alt="Android devices"
-              />
-              <img
-                src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/8c786e82ecd2fa7c41996407deeae945da851950/assets/icon-windows.svg"
-                alt="Windows devices"
-              />
-            </div>
-          </div>
+  <!-- trailers -->
+  <section class="px-5 py-8 md:py-32 bg-trailer-poster">
+    <div class="flex flex-col gap-20 max-w-boxed-lg mx-auto md:flex-row md:justify-between md:self-stretch">
+      <div class="basis-full flex flex-col shrink-0 gap-7 md:basis-1/2 md:justify-center">
+        <!-- main description -->
+        <div class="flex flex-col gap-5 md:max-w-[570px]">
+          <h2 class="font-bold text-2xl text-gray-900 md:text-3xl">Amazing Trailers</h2>
+          <p class="opacity-80 text-base text-gray-500 md:text-xl">
+            Since most of our features work in a completely automated way, you will mainly use our apps to discover new TV shows recommended
+            for you and discuss the most interesting episodes with like-minded people.
+          </p>
         </div>
-        <div class="flex justify-center relative shrink-0 z-10">
-          <img
-            src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/iphone-14-pro-frame.png"
-            class="absolute bg-clip-content w-[265px] z-50"
-          />
-          <img
-            src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/app-mockup.jpg"
-            class="w-[248px]"
-          />
+        <!-- series selection -->
+        <div class="flex flex-col gap-5">
+          <!-- series box -->
+          <a href="#" class="bg-white flex flex-row gap-3 items-center p-1 rounded shadow-md shadow-shade text-gray-900">
+            <img
+              src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/poster-house-of-cards.jpg"
+              class="rounded-lg w-8"
+            />
+            <p class="font-semibold text-base">House of Cards</p>
+          </a>
+          <!-- series box -->
+          <a
+            href="#"
+            class="
+              bg-white
+              flex flex-row
+              gap-3
+              items-center
+              opacity-50
+              p-1
+              rounded
+              text-gray-500
+              hover:opacity-100 hover:shadow-md hover:shadow-shade hover:text-gray-900
+            "
+          >
+            <img
+              src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/poster-game-of-thrones.jpg"
+              class="rounded-lg w-8"
+            />
+            <p class="font-semibold text-base">Game of Thrones</p>
+          </a>
+          <!-- series box -->
+          <a
+            href="#"
+            class="
+              bg-white
+              flex flex-row
+              gap-3
+              items-center
+              opacity-50
+              p-1
+              rounded
+              text-gray-500
+              hover:opacity-100 hover:shadow-md hover:shadow-shade hover:text-gray-900
+            "
+          >
+            <img
+              src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/poster-westworld.jpg"
+              class="rounded-lg w-8"
+            />
+            <p class="font-semibold text-base">Westworld</p>
+          </a>
         </div>
       </div>
-    </section>
-    <img
-      src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/cover.jpg"
-      class="absolute hidden w-1/2 md:flex"
-    />
-  </div>
+      <!-- mockup -->
+      <div class="basis-full flex justify-center relative shrink z-10 md:basis-1/2 lg:justify-start">
+        <img
+          src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/iphone-14-pro-frame.png"
+          class="absolute bg-clip-content w-[265px] z-50"
+        />
+        <img
+          src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/app-mockup.jpg"
+          class="w-[254px]"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- community -->
+  <section class="bg-gray-950 px-5 py-16 md:py-32">
+    <div class="flex flex-col gap-20 max-w-boxed-lg mx-auto md:flex-row md:justify-between md:self-stretch">
+      <div class="basis-full flex flex-col shrink-0 gap-7 md:basis-1/2 md:justify-center">
+        <!-- main description -->
+        <div class="flex flex-col gap-8 text-white">
+          <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-1">
+              <span class="opacity-80 text-lg">Community</span>
+              <h2 class="font-bold text-2xl lg:text-3xl">We believe in the power of community</h2>
+            </div>
+            <p class="opacity-80 text-base md:text-xl">
+              Our goal is to create a product and service that you’re satisfied with and use it every day. This is why we’re constantly
+              working on our services to make it better every day and really listen to what our users has to say.
+            </p>
+          </div>
+          <a class="bg-primary font-semibold leading-10 max-w-fit px-4 py-1 rounded text-white" href="#">Read more testimonials</a>
+        </div>
+      </div>
+      <!-- testimonial carousels -->
+      <div class="basis-full flex justify-center relative shrink z-10 md:basis-1/2 lg:justify-start">
+        <div class="flex flex-col gap-5 md:flex-row">
+          <div class="bg-gray-900 flex flex-col gap-5 p-4 rounded-lg">
+            <div class="flex">
+              <img src="">
+              <span></span>
+              <svg></svg>
+            </div>
+            <p class="text-gray-300 text-sm">I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :)</p>
+            <span class="text-gray-500 text-sm">Jan 18, 2018</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>

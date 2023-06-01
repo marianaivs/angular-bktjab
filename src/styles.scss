@@ -15,4 +15,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
-
+@media only screen and (min-width: 1000px) {
+  .bg-trailer-poster {
+    background: url('https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/cover.jpg')
+      no-repeat right center;
+    background-size: 550px;
+  }
+}
