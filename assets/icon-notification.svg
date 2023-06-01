@@ -1,21 +1,3 @@
-<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_1_43)">
-<rect x="4" y="2" width="50" height="50" rx="10" fill="url(#paint0_linear_1_43)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M32.7703 18.3649C32.7703 21.0517 34.9483 23.2297 37.6351 23.2297C40.3219 23.2297 42.5 21.0517 42.5 18.3649C42.5 15.6781 40.3219 13.5 37.6351 13.5C34.9483 13.5 32.7703 15.6781 32.7703 18.3649ZM30.8319 18.0405C30.8528 17.5956 30.9163 17.1618 31.0186 16.7432H22.392C20.2425 16.7432 18.5 18.4861 18.5 20.6352V33.608C18.5 35.7575 20.2429 37.5 22.392 37.5H35.3648C37.5142 37.5 39.2568 35.7571 39.2568 33.608V24.9814C38.8382 25.0837 38.4044 25.1472 37.9595 25.1681V33.608C37.9595 35.0408 36.7976 36.2027 35.3648 36.2027H22.392C20.9592 36.2027 19.7973 35.0409 19.7973 33.608V20.6352C19.7973 19.2025 20.9591 18.0405 22.392 18.0405H30.8319Z" fill="white"/>
-</g>
-<defs>
-<filter id="filter0_d_1_43" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="2"/>
-<feGaussianBlur stdDeviation="2"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.141176 0 0 0 0 0.0313726 0 0 0 0 0.501961 0 0 0 0.15 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_43"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_43" result="shape"/>
-</filter>
-<linearGradient id="paint0_linear_1_43" x1="-21" y1="27" x2="29" y2="77" gradientUnits="userSpaceOnUse">
-<stop stop-color="#32FBFC"/>
-<stop offset="1" stop-color="#3214F2"/>
-</linearGradient>
-</defs>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7703 7.36486C19.7703 10.0517 21.9483 12.2297 24.6351 12.2297C27.3219 12.2297 29.5 10.0517 29.5 7.36486C29.5 4.67807 27.3219 2.5 24.6351 2.5C21.9483 2.5 19.7703 4.67807 19.7703 7.36486ZM17.8319 7.04054C17.8528 6.59561 17.9163 6.16184 18.0186 5.74324H9.39201C7.24251 5.74324 5.5 7.48615 5.5 9.63525V22.608C5.5 24.7575 7.2429 26.5 9.39201 26.5H22.3648C24.5142 26.5 26.2568 24.7571 26.2568 22.608V13.9814C25.8382 14.0837 25.4044 14.1472 24.9595 14.1681V22.608C24.9595 24.0408 23.7976 25.2027 22.3648 25.2027H9.39201C7.95923 25.2027 6.7973 24.0409 6.7973 22.608V9.63525C6.7973 8.20247 7.95914 7.04054 9.39201 7.04054H17.8319Z" fill="white"/>
 </svg>

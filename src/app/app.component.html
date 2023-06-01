@@ -17,7 +17,7 @@
         <li class="hidden px-4 py-2 md:flex">
           <a href="#">About Us</a>
         </li>
-        <li class="bg-primary rounded">
+        <li class="bg-primary rounded hover:bg-purple-500 transition ease-in-out duration-400">
           <a class="leading-10 px-4 py-2 text-white" href="#">Log In</a>
         </li>
       </ul>
@@ -40,7 +40,7 @@
             </p>
             <!-- subscription form -->
             <form class="relative">
-              <label for="email-address" class="absolute font-semibold ps-4 pointer-events-none pt-1 text-primary text-sm">Email</label>
+              <label for="email-address" class="absolute font-semibold ps-4 pointer-events-none pt-1.5 text-primary text-sm">Email</label>
               <input
                 id="email-address"
                 name="email"
@@ -48,7 +48,26 @@
                 class="border-2 border-gray-300 pb-1 ps-4 pe-3.5 pt-5 rounded-md w-full"
                 placeholder="your@email.com"
               />
-              <button class="absolute bg-primary font-semibold leading-10 me-1 my-1.5 px-4 end-0 rounded text-white top-0 truncate">
+              <button
+                class="
+                  absolute
+                  bg-primary
+                  font-semibold
+                  leading-10
+                  me-1.5
+                  my-1.5
+                  px-4
+                  end-0
+                  rounded
+                  text-white
+                  top-0
+                  truncate
+                  hover:bg-purple-500
+                  transition
+                  ease-in-out
+                  duration-500
+                "
+              >
                 Start Tracking
               </button>
             </form>
@@ -75,9 +94,12 @@
         <div class="flex justify-center relative shrink-0 z-10">
           <img
             src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/iphone-14-pro-frame.png"
-            class="absolute h-fit top-0 w-[300px] z-50"
+            class="absolute max-h-[600px] top-0 w-auto z-50"
           />
-          <img src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/app-mockup.png" class="h-fit w-[280px]" />
+          <img
+            src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/app-mockup.png"
+            class="max-h-[600px] rounded-[50px]"
+          />
         </div>
       </div>
       <!-- decoration assets -->
@@ -111,38 +133,14 @@
         <!-- feature box -->
         <div class="align-center flex flex-col flex-wrap gap-3 justify-center md:basis-1/3 md:max-w-[calc(33.3333%-3rem)]">
           <div class="flex justify-center w-full">
-            <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d_1_41)">
-                <rect x="4" y="2" width="50" height="50" rx="10" fill="url(#paint0_linear_1_41)" />
+            <div class="bg-gradient-to-br from-purple-300 to-purple-500 p-2 ps-3 rounded-lg">
+              <svg class="-ms-1" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M39.4769 27.9316L24.5984 36.8506C24.0935 37.1533 23.4434 36.9815 23.1464 36.467C23.0506 36.3009 23 36.1117 23 35.9189V18.0809C23 17.4839 23.4749 17 24.0607 17C24.2498 17 24.4354 17.0515 24.5984 17.1492L39.4769 26.0683C39.9819 26.3709 40.1504 27.0334 39.8534 27.5479C39.762 27.7064 39.6324 27.8384 39.4769 27.9316Z"
+                  d="M23.9769 16.9316L9.09843 25.8506C8.59352 26.1533 7.94344 25.9815 7.64644 25.467C7.55056 25.3009 7.5 25.1117 7.5 24.9189V7.08089C7.5 6.48393 7.97487 6 8.56065 6C8.74976 6 8.93543 6.05152 9.09843 6.14923L23.9769 15.0683C24.4819 15.3709 24.6504 16.0334 24.3534 16.5479C24.262 16.7064 24.1324 16.8384 23.9769 16.9316Z"
                   fill="white"
                 />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_1_41"
-                  x="0"
-                  y="0"
-                  width="58"
-                  height="58"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                  <feOffset dy="2" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.141176 0 0 0 0 0.0313726 0 0 0 0 0.501961 0 0 0 0.15 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_41" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_41" result="shape" />
-                </filter>
-                <linearGradient id="paint0_linear_1_41" x1="-21" y1="27" x2="29" y2="77" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#9C09DB" />
-                  <stop offset="1" stop-color="#1C0FD7" />
-                </linearGradient>
-              </defs>
-            </svg>
+              </svg>
+            </div>
           </div>
           <h3 class="font-bold text-xl">Automated tracking</h3>
           <p class="text-gray-500">Track your favorite shows automatically without switching between apps.</p>
@@ -159,40 +157,16 @@
         <!-- feature box -->
         <div class="align-center flex flex-col flex-wrap gap-3 justify-center md:basis-1/3 md:max-w-[calc(33.3333%-3rem)]">
           <div class="flex justify-center w-full">
-            <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d_1_45)">
-                <rect x="4" y="2" width="50" height="50" rx="10" fill="url(#paint0_linear_1_45)" />
+            <div class="bg-gradient-to-br from-orange-300 to-orange-500 p-2 rounded-lg">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
-                  d="M16.5 17.5C15.3954 17.5 14.5 18.3954 14.5 19.5V34.5C14.5 35.6046 15.3954 36.5 16.5 36.5H41.5C42.6046 36.5 43.5 35.6046 43.5 34.5V19.5C43.5 18.3954 42.6046 17.5 41.5 17.5H16.5ZM21.7344 21.125H20.6562H19.75H18.6797V32.5H21.0156V29.2656L20.7824 23.9828L23.8594 32.5H25.4531L28.5301 23.9828L28.2969 29.2656V32.5H30.6406V21.125H29.5625H28.6562H27.5781L24.6562 29.4766L21.7344 21.125ZM40.0078 32.5V30.6719H35.0391V21.125H32.6953V32.5H34.2812H35.0391H40.0078Z"
+                  d="M3.5 6.5C2.39543 6.5 1.5 7.39543 1.5 8.5V23.5C1.5 24.6046 2.39543 25.5 3.5 25.5H28.5C29.6046 25.5 30.5 24.6046 30.5 23.5V8.5C30.5 7.39543 29.6046 6.5 28.5 6.5H3.5ZM8.73438 10.125H7.65625H6.75H5.67969V21.5H8.01562V18.2656L7.78241 12.9828L10.8594 21.5H12.4531L15.5301 12.9828L15.2969 18.2656V21.5H17.6406V10.125H16.5625H15.6562H14.5781L11.6562 18.4766L8.73438 10.125ZM27.0078 21.5V19.6719H22.0391V10.125H19.6953V21.5H21.2812H22.0391H27.0078Z"
                   fill="white"
                 />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_1_45"
-                  x="0"
-                  y="0"
-                  width="58"
-                  height="58"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                  <feOffset dy="2" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.141176 0 0 0 0 0.0313726 0 0 0 0 0.501961 0 0 0 0.15 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_45" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_45" result="shape" />
-                </filter>
-                <linearGradient id="paint0_linear_1_45" x1="-21" y1="27" x2="29" y2="77" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#F2C314" />
-                  <stop offset="1" stop-color="#FC3832" />
-                </linearGradient>
-              </defs>
-            </svg>
+              </svg>
+            </div>
           </div>
           <h3 class="font-bold text-xl">Machine learning</h3>
           <p class="text-gray-500">Get recommendations like never before, which are truly customized for your taste.</p>
@@ -209,40 +183,16 @@
         <!-- feature box -->
         <div class="align-center flex flex-col flex-wrap gap-3 justify-center md:basis-1/3 md:max-w-[calc(33.3333%-3rem)]">
           <div class="flex justify-center w-full">
-            <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d_1_43)">
-                <rect x="4" y="2" width="50" height="50" rx="10" fill="url(#paint0_linear_1_43)" />
+            <div class="bg-gradient-to-br from-blue-300 to-blue-500 p-2 rounded-lg">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
-                  d="M32.7703 18.3649C32.7703 21.0517 34.9483 23.2297 37.6351 23.2297C40.3219 23.2297 42.5 21.0517 42.5 18.3649C42.5 15.6781 40.3219 13.5 37.6351 13.5C34.9483 13.5 32.7703 15.6781 32.7703 18.3649ZM30.8319 18.0405C30.8528 17.5956 30.9163 17.1618 31.0186 16.7432H22.392C20.2425 16.7432 18.5 18.4861 18.5 20.6352V33.608C18.5 35.7575 20.2429 37.5 22.392 37.5H35.3648C37.5142 37.5 39.2568 35.7571 39.2568 33.608V24.9814C38.8382 25.0837 38.4044 25.1472 37.9595 25.1681V33.608C37.9595 35.0408 36.7976 36.2027 35.3648 36.2027H22.392C20.9592 36.2027 19.7973 35.0409 19.7973 33.608V20.6352C19.7973 19.2025 20.9591 18.0405 22.392 18.0405H30.8319Z"
+                  d="M19.7703 7.36486C19.7703 10.0517 21.9483 12.2297 24.6351 12.2297C27.3219 12.2297 29.5 10.0517 29.5 7.36486C29.5 4.67807 27.3219 2.5 24.6351 2.5C21.9483 2.5 19.7703 4.67807 19.7703 7.36486ZM17.8319 7.04054C17.8528 6.59561 17.9163 6.16184 18.0186 5.74324H9.39201C7.24251 5.74324 5.5 7.48615 5.5 9.63525V22.608C5.5 24.7575 7.2429 26.5 9.39201 26.5H22.3648C24.5142 26.5 26.2568 24.7571 26.2568 22.608V13.9814C25.8382 14.0837 25.4044 14.1472 24.9595 14.1681V22.608C24.9595 24.0408 23.7976 25.2027 22.3648 25.2027H9.39201C7.95923 25.2027 6.7973 24.0409 6.7973 22.608V9.63525C6.7973 8.20247 7.95914 7.04054 9.39201 7.04054H17.8319Z"
                   fill="white"
                 />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_1_43"
-                  x="0"
-                  y="0"
-                  width="58"
-                  height="58"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                  <feOffset dy="2" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.141176 0 0 0 0 0.0313726 0 0 0 0 0.501961 0 0 0 0.15 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_43" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_43" result="shape" />
-                </filter>
-                <linearGradient id="paint0_linear_1_43" x1="-21" y1="27" x2="29" y2="77" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#32FBFC" />
-                  <stop offset="1" stop-color="#3214F2" />
-                </linearGradient>
-              </defs>
-            </svg>
+              </svg>
+            </div>
           </div>
           <h3 class="font-bold text-xl">Smart notifications</h3>
           <p class="text-gray-500">Receive smart notifications exactly at the right moments when you need them.</p>
@@ -336,6 +286,9 @@
               rounded
               text-gray-500
               hover:opacity-100 hover:shadow-md hover:shadow-shade hover:text-gray-900
+              transition
+              ease-in-out
+              duration-500
             "
           >
             <img
@@ -357,6 +310,9 @@
               rounded
               text-gray-500
               hover:opacity-100 hover:shadow-md hover:shadow-shade hover:text-gray-900
+              transition
+              ease-in-out
+              duration-500
             "
           >
             <img
@@ -375,7 +331,7 @@
         />
         <img
           src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/app-mockup.jpg"
-          class="w-[254px]"
+          class="w-[254px] h-[540px] rounded-[30px]"
         />
       </div>
     </div>
@@ -397,7 +353,24 @@
               working on our services to make it better every day and really listen to what our users has to say.
             </p>
           </div>
-          <a class="bg-primary font-semibold leading-10 max-w-fit px-4 py-1 rounded text-white" href="#">Read more testimonials</a>
+          <a
+            class="
+              bg-primary
+              font-semibold
+              leading-10
+              max-w-fit
+              px-4
+              py-1
+              rounded
+              text-white
+              hover:bg-purple-500
+              transition
+              ease-in-out
+              duration-400
+            "
+            href="#"
+            >Read more testimonials</a
+          >
         </div>
       </div>
       <!-- testimonials -->
@@ -631,30 +604,82 @@
   </section>
 
   <!-- newsletter -->
+  <section class="max-w-boxed-sm mx-auto px-5 py-8 md:py-24">
+    <div class="flex flex-col flex-wrap gap-12 text-center md:flex-row">
+      <!-- main description -->
+      <div class="flex flex-col gap-5">
+        <div class="flex flex-col gap-1">
+          <span class="text-gray-500 text-lg">Newsletter</span>
+          <h2 class="font-bold text-2xl text-gray-900 lg:text-3xl">Receive our amazing newsletter with news</h2>
+        </div>
+        <p class="opacity-80 text-base text-gray-500 md:text-xl">
+          In order to receive news from our app so you can start tracking your TV shows in a better way, all you have to do is enter your
+          email address.
+        </p>
+      </div>
+      <!-- subscription form -->
+      <form class="max-w-lg mx-auto relative w-full">
+        <label for="email-address" class="absolute font-semibold ps-4 pointer-events-none pt-1.5 text-primary text-sm">Email</label>
+        <input
+          id="email-address"
+          name="email"
+          type="email"
+          class="border-2 border-gray-300 pb-1 ps-4 pe-3.5 pt-5 rounded-md w-full"
+          placeholder="your@email.com"
+        />
+        <button
+          class="
+            absolute
+            bg-primary
+            font-semibold
+            leading-10
+            me-1.5
+            my-1.5
+            px-4
+            end-0
+            rounded
+            text-white
+            top-0
+            truncate
+            hover:bg-purple-500
+            transition
+            ease-in-out
+            duration-400
+          "
+        >
+          Start Tracking
+        </button>
+      </form>
+    </div>
+  </section>
 </main>
 
 <!-- footer -->
 <footer class="flex flex-col gap-6 p-8">
   <div class="flex gap-8 items-center justify-center">
-    <svg class="justify-self-end" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M17.9297 4.9375C17.9297 5.13281 17.9297 5.28906 17.9297 5.48438C17.9297 10.9141 13.8281 17.125 6.28906 17.125C3.94531 17.125 1.79688 16.4609 0 15.2891C0.3125 15.3281 0.625 15.3672 0.976562 15.3672C2.89062 15.3672 4.64844 14.7031 6.05469 13.6094C4.25781 13.5703 2.73438 12.3984 2.22656 10.7578C2.5 10.7969 2.73438 10.8359 3.00781 10.8359C3.35938 10.8359 3.75 10.7578 4.0625 10.6797C2.1875 10.2891 0.78125 8.64844 0.78125 6.65625V6.61719C1.32812 6.92969 1.99219 7.08594 2.65625 7.125C1.52344 6.38281 0.820312 5.13281 0.820312 3.72656C0.820312 2.94531 1.01562 2.24219 1.36719 1.65625C3.39844 4.11719 6.44531 5.75781 9.84375 5.95312C9.76562 5.64062 9.72656 5.32812 9.72656 5.01562C9.72656 2.75 11.5625 0.914062 13.8281 0.914062C15 0.914062 16.0547 1.38281 16.8359 2.20312C17.7344 2.00781 18.6328 1.65625 19.4141 1.1875C19.1016 2.16406 18.4766 2.94531 17.6172 3.45312C18.4375 3.375 19.2578 3.14062 19.9609 2.82812C19.4141 3.64844 18.7109 4.35156 17.9297 4.9375Z"
-        fill="#8492A6"
-      />
-    </svg>
-    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M20.1875 9.97852C20.1875 4.62695 15.8516 0.291016 10.5 0.291016C5.14844 0.291016 0.8125 4.62695 0.8125 9.97852C0.8125 14.8223 4.32812 18.8457 8.97656 19.5488V12.791H6.51562V9.97852H8.97656V7.86914C8.97656 5.44727 10.4219 4.08008 12.6094 4.08008C13.7031 4.08008 14.7969 4.27539 14.7969 4.27539V6.6582H13.5859C12.375 6.6582 11.9844 7.40039 11.9844 8.18164V9.97852H14.6797L14.25 12.791H11.9844V19.5488C16.6328 18.8457 20.1875 14.8223 20.1875 9.97852Z"
-        fill="#8492A6"
-      />
-    </svg>
-
-    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M20.9453 2.86133C20.7109 1.92383 19.9688 1.18164 19.0703 0.947266C17.3906 0.478516 10.75 0.478516 10.75 0.478516C10.75 0.478516 4.07031 0.478516 2.39062 0.947266C1.49219 1.18164 0.75 1.92383 0.515625 2.86133C0.046875 4.50195 0.046875 8.01758 0.046875 8.01758C0.046875 8.01758 0.046875 11.4941 0.515625 13.1738C0.75 14.1113 1.49219 14.8145 2.39062 15.0488C4.07031 15.4785 10.75 15.4785 10.75 15.4785C10.75 15.4785 17.3906 15.4785 19.0703 15.0488C19.9688 14.8145 20.7109 14.1113 20.9453 13.1738C21.4141 11.4941 21.4141 8.01758 21.4141 8.01758C21.4141 8.01758 21.4141 4.50195 20.9453 2.86133ZM8.5625 11.1816V4.85352L14.1094 8.01758L8.5625 11.1816Z"
-        fill="#8492A6"
-      />
-    </svg>
+    <a href="#"
+      ><svg class="justify-self-end" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M17.9297 4.9375C17.9297 5.13281 17.9297 5.28906 17.9297 5.48438C17.9297 10.9141 13.8281 17.125 6.28906 17.125C3.94531 17.125 1.79688 16.4609 0 15.2891C0.3125 15.3281 0.625 15.3672 0.976562 15.3672C2.89062 15.3672 4.64844 14.7031 6.05469 13.6094C4.25781 13.5703 2.73438 12.3984 2.22656 10.7578C2.5 10.7969 2.73438 10.8359 3.00781 10.8359C3.35938 10.8359 3.75 10.7578 4.0625 10.6797C2.1875 10.2891 0.78125 8.64844 0.78125 6.65625V6.61719C1.32812 6.92969 1.99219 7.08594 2.65625 7.125C1.52344 6.38281 0.820312 5.13281 0.820312 3.72656C0.820312 2.94531 1.01562 2.24219 1.36719 1.65625C3.39844 4.11719 6.44531 5.75781 9.84375 5.95312C9.76562 5.64062 9.72656 5.32812 9.72656 5.01562C9.72656 2.75 11.5625 0.914062 13.8281 0.914062C15 0.914062 16.0547 1.38281 16.8359 2.20312C17.7344 2.00781 18.6328 1.65625 19.4141 1.1875C19.1016 2.16406 18.4766 2.94531 17.6172 3.45312C18.4375 3.375 19.2578 3.14062 19.9609 2.82812C19.4141 3.64844 18.7109 4.35156 17.9297 4.9375Z"
+          fill="#8492A6"
+        /></svg
+    ></a>
+    <a href="#">
+      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M20.1875 9.97852C20.1875 4.62695 15.8516 0.291016 10.5 0.291016C5.14844 0.291016 0.8125 4.62695 0.8125 9.97852C0.8125 14.8223 4.32812 18.8457 8.97656 19.5488V12.791H6.51562V9.97852H8.97656V7.86914C8.97656 5.44727 10.4219 4.08008 12.6094 4.08008C13.7031 4.08008 14.7969 4.27539 14.7969 4.27539V6.6582H13.5859C12.375 6.6582 11.9844 7.40039 11.9844 8.18164V9.97852H14.6797L14.25 12.791H11.9844V19.5488C16.6328 18.8457 20.1875 14.8223 20.1875 9.97852Z"
+          fill="#8492A6"
+        />
+      </svg>
+    </a>
+    <a href="#">
+      <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M20.9453 2.86133C20.7109 1.92383 19.9688 1.18164 19.0703 0.947266C17.3906 0.478516 10.75 0.478516 10.75 0.478516C10.75 0.478516 4.07031 0.478516 2.39062 0.947266C1.49219 1.18164 0.75 1.92383 0.515625 2.86133C0.046875 4.50195 0.046875 8.01758 0.046875 8.01758C0.046875 8.01758 0.046875 11.4941 0.515625 13.1738C0.75 14.1113 1.49219 14.8145 2.39062 15.0488C4.07031 15.4785 10.75 15.4785 10.75 15.4785C10.75 15.4785 17.3906 15.4785 19.0703 15.0488C19.9688 14.8145 20.7109 14.1113 20.9453 13.1738C21.4141 11.4941 21.4141 8.01758 21.4141 8.01758C21.4141 8.01758 21.4141 4.50195 20.9453 2.86133ZM8.5625 11.1816V4.85352L14.1094 8.01758L8.5625 11.1816Z"
+          fill="#8492A6"
+        />
+      </svg>
+    </a>
   </div>
   <div class="text-center">
     <small class="text-gray-500 text-sm">Copyright 2018 All rights reserved — Designed by Daniel Korpai</small>
